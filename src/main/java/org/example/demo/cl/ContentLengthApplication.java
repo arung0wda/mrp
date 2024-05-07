@@ -44,7 +44,7 @@ public class ContentLengthApplication {
 
         try {
 
-            log.info("Now with Empty string as body:\n\n\n\n\n");
+            log.info("\n\n\n\nNow with Empty string as body:\n\n");
 
             HttpEntity<?> reqEntityWithEmpty = new HttpEntity<>("", new HttpHeaders());
             template.exchange("https://www.google.com", HttpMethod.POST, reqEntityWithEmpty, String.class);
